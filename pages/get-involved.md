@@ -4,33 +4,30 @@ title: HARMONY連 | Get Involved
 ---
 
 # Get Involved
-
-There are multiple ways to get involved with us.  
-Once you have chosen a role, please reach out via [Contact Us](/contact-us) for further guidance.
+HARMONY連 thrives on collaboration. There are multiple ways to contribute—choose your role and reach out via [Contact Us](/contact-us) to start your journey with us.
 
 ---
 
-## Become an Debater
+## Become a Debater
+Open to anyone passionate about research and innovation.  
+Debaters can read, discuss, and submit theses by generating a keypair using [**所ID**](https://github.com/kai5041/shoid).  
 
-Anyone can observe and submit reviews by obtaining a keypair from [**所ID**](https://github.com/kai5041/shoid).
+Contribute your ideas, engage in debates, and help shape the collective’s knowledge base—without legal obligations.
 
 ---
 
-## Become a Core Member
+## Become an Operator
+Operators are official, income-generating members of HARMONY連, empowered to take on legal responsibilities.  
+Joining requires a legally binding agreement signed with an **eIDAS-compliant electronic signature**, as all members act as independent contractors.  
 
-Anyone interested in becoming an official member of **HARMONY連** can reach out to {{ kai_placeholder }} via [Contact Us](/contact-us).  
+If you’re ready to step into a formal role, contact {{ kai_placeholder }} via [**Contact Us**](/contact-us).  
 
-If your involvement generates income, a legally binding agreement is required, as all members operate as independent contractors.  
-This agreement must be signed with an **eIDAS-compliant electronic signature**.
-
-**Note**: For legal reasons, we currently accept legally contracted members residing in Italy only.  
-We plan to expand internationally in the future with the support of [**所ID**](https://github.com/kai5041/shoid).
+> **Note:** Currently, only residents of Italy can become legally contracted members. International expansion is planned with support from [**所ID**](https://github.com/kai5041/shoid).
 
 ---
 
 ## Become a Proxy
+Represent your organization within HARMONY連.  
+Proxies may either assign one of your staff or delegate a HARMONY連 member to act on your behalf.  
 
-Looking to partner with **HARMONY連** as an organization?  You can choose one of your workers as a proxy or delegate a member of HARMONY連 to represent your legal entity.  
-
-Proxies hold the same rights and responsibilities as **Core Members**,
-allowing your organization to actively participate in our initiatives.
+Proxies enjoy the same rights and responsibilities as **Operators**, enabling your organization to actively participate in initiatives and contribute to collective innovation.

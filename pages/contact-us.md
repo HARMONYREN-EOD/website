@@ -5,20 +5,24 @@ title: HARMONY連 | Contact Us
 
 # Contact Us
 
-**{{ kai_placeholder }} (Founder, fastest responses but may be busy) ー Telegram**: [@kai5041](https://t.me/kai5041)
+Reach out to the HARMONY連 through the following channels:
 
-**English Email (formal inquiries, standard response time)**: [contact-en@harmonyren.net](mailto:contact-en@harmonyren.net)
+**Founder & Quick Responses**: {{ kai_placeholder }} – Telegram: [@kai5041](https://t.me/kai5041)  
+*Fastest replies, but may be occasionally busy.*
 
-**Japanese/日本語 Email (formal inquiries, standard response time)**: [contact-ja@harmonyren.net](mailto:contact-ja@harmonyren.net)
+**Formal Inquiries (English)**: [eod.contact-en@harmonyren.net](mailto:eod.contact-en@harmonyren.net)  
+**Formal Inquiries (日本語)**: [eod.contact-ja@harmonyren.net](mailto:eod.contact-ja@harmonyren.net)  
+*Standard response time applies.*
 
 ---
 
-# Social Platforms
+# Connect With Us
 
-**Instagram**: [@harmonyren.official](https://www.instagram.com/harmonyren.official/)  
+Stay updated and join our community:
 
-**YouTube**: [@HARMONYREN](https://www.youtube.com/@HARMONYREN)  
+- **Instagram**: [@harmonyren.official](https://www.instagram.com/harmonyren.official/)  
+- **YouTube**: [@HARMONYREN](https://www.youtube.com/@HARMONYREN)  
+- **Twitter/X**: [@OIC_HARMONYREN](https://x.com/OIC_HARMONYREN)  
+- **Discord**: [Join our server](https://discord.com/invite/hw2z8atnDR)  
 
-**Twitter/X**: [@OIC_HARMONYREN](https://x.com/OIC_HARMONYREN)  
-
-**Discord**: [discord.gg/hw2z8atnDR](https://discord.com/invite/hw2z8atnDR)  
+We welcome questions, collaborations, and community engagement. Don’t hesitate to reach out!

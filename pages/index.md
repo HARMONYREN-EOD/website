@@ -21,6 +21,7 @@ title: HARMONY連 | Home
     margin-top: 1.5rem;
     font-size: 1.25rem;
     line-height: 1.6;
+    text-align: justified;
   }
 
   .btn-accent {
@@ -47,7 +48,7 @@ title: HARMONY連 | Home
   </p>
 
   <p class="hero-subtext">
-    Join the Open Innovation Collective HARMONY連, then study, submit your ideas, and create together.
+    Join the Open Innovation Collective HARMONY連.<br/>Then study, submit your ideas, and create together.
   </p>
 
   <a href="/get-involved" class="btn-accent">Get Involved</a>

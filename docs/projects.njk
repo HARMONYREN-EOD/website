@@ -1,0 +1,56 @@
+---
+layout: default.njk
+title: HARMONY連 | Projects
+---
+
+# Projects
+
+<style>
+  .projects-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.projects-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-row::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.project-card {
+  min-width: 250px; /* card width */
+  flex: 0 0 auto;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+</style>
+<pre>{{ departments | dump }}</pre>
+
+
+{% for department in departments.yml %}
+  <section class="department">
+    <h2>{{ department.name }}</h2>
+    <p>{{ department.description }}</p>
+
+    <div class="projects-row">
+      {% for project in department.projects %}
+        <div class="project-card">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <span class="platform">{{ project.platform }}</span>
+          <a href="{{ project.link }}" target="_blank">View</a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}
+

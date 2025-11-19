@@ -12,7 +12,6 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
-  padding: 0 1rem;
 }
 
 a {
@@ -20,9 +19,14 @@ a {
 }
 
 main {
-  max-width: 800px;
   width: 90%;
   margin: 0 auto;
+}
+
+blockquote {
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 ::selection {
