@@ -4,13 +4,9 @@
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid var(--text-color);
-  border-top: 0;
   padding: 5px 20px;
   text-align: center;
 }
-
-
 
 .nav ul {
   display: flex;

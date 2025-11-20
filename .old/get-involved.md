@@ -12,7 +12,7 @@ HARMONY連 thrives on collaboration. There are multiple ways to contribute—cho
 Open to anyone passionate about research and innovation.  
 Debaters can read, discuss, and submit theses by generating a keypair using [**所ID**](https://github.com/kai5041/shoid).  
 
-Contribute your ideas, engage in debates, and help shape the collective’s knowledge base—without legal obligations.
+Contribute your ideas, engage in debates, and help shape the collective’s knowledge base, without legal obligations.
 
 ---
 

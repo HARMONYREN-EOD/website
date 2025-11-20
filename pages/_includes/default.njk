@@ -24,29 +24,44 @@
 
   <meta name="twitter:image" content="/assets/png/harmony_ren_light.png">
 
+  <style>
+    .construction-banner {
+      background-color: var(--text-color);
+      color: var(--background-color);
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+      padding: 12px 0;
+      margin: 10px 0;
+    }
+
+    .subnote {
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: var(--background-color);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 
 <body>
   {% include "nav.njk" %}
 
-  <div style="
-  background-color: var(--text-color);
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  font-style: italic;
-  padding: 8px 0;
-  margin-top: 10px;
-">
-    WEBSITE UNDER CONSTRUCTION
+  <div class="construction-banner">
+    WEBSITE UNDER CONSTRUCTION<br>
   </div>
 
   <main>
     {{ content | safe }}
   </main>
 
-  <footer style="text-align: center; font-size: calc(0.9rem)">
+  <footer>
     <p>HARMONY REN・For Innovation・2025/2025</p>
   </footer>
 </body>
