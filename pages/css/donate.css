@@ -1,0 +1,34 @@
+#donate-by-metamask {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px
+}
+
+#donate-by-metamask p {
+  margin: 0
+}
+
+#show-on-success {
+  display: none;
+  margin-left: 10px;
+  color: #F00
+}
+
+#donate-by-metamask button {
+  font-family: "Noto Serif JP";
+  border: none;
+  padding: .5vw 2vw;
+  color: var(--background-color);
+  background-color: var(--text-color)
+}
+
+#donate-by-metamask input {
+  font-family: "Noto Serif JP";
+  border: 1px solid var(--text-color);
+  padding: .5vw;
+  max-width: 5vw
+}
+
+#donate-by-metamask button:hover {
+  cursor: pointer
+}

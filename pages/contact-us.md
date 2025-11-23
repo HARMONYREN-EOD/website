@@ -14,6 +14,8 @@ Reach out to the HARMONY連 through the following channels:
 
 ---
 
+<div id="social-media"></div>
+
 Stay updated and join our community:
 - **Instagram**: [@harmonyren.official](https://www.instagram.com/harmonyren.official/)  
 - **YouTube**: [@HARMONYREN](https://www.youtube.com/@HARMONYREN)  

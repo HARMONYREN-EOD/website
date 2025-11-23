@@ -9,13 +9,13 @@
 
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/nav.css">
-  <title>HARMONY連 | Get Involved</title>
+  <title>HARMONY連 | About Us</title>
 
   <meta name="description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <link rel="canonical" href="https://harmonyren.net/">
 
-  <meta property="og:title" content="HARMONY連 | Get Involved">
+  <meta property="og:title" content="HARMONY連 | About Us">
   <meta property="og:description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <meta property="og:url" content="https://harmonyren.net/">
@@ -24,6 +24,30 @@
 
   <meta name="twitter:image" content="/assets/png/harmony_ren_light.png">
 
+  <style>
+    .construction-banner {
+      background-color: var(--text-color);
+      color: var(--background-color);
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+      padding: 12px 0;
+      margin: 10px 0;
+    }
+
+    .subnote {
+      font-size: 1.3rem;
+      font-weight: normal;
+      color: var(--background-color);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,54 +57,44 @@
 
   <ul id="nav-menu">
     <li><a href="/">Home</a></li>
-    <li><a href="/about-us">About Us</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/members">Members</a></li>
-    <li><a href="/transparency">Transparency</a></li>
-    <li><a href="/contact-us">Contact Us</a></li>
-    <li><a href="/get-involved">Get Involved</a></li>
+    <li><a href="/about-us/">About Us</a></li>
+    <li><a href="/contact-us/">Contact Us</a></li>
+    <li><a href="/get-involved/">Get Involved</a></li>
+
+    <!--
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/get-involved/">Get Involved</a></li>
+    -->
   </ul>
 </nav>
 <script src="/js/nav-menu-toggle.js"></script>
 
-  <div style="
-  background-color: var(--text-color);
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  font-style: italic;
-  padding: 8px 0;
-  margin-top: 10px;
-">
-    WEBSITE UNDER CONSTRUCTION
+  <div class="construction-banner">
+    WEBSITE UNDER CONSTRUCTION<br>
   </div>
 
   <main>
-    <h1>Get Involved</h1>
-<p>HARMONY連 thrives on collaboration. There are multiple ways to contribute—choose your role and reach out via <a href="/contact-us">Contact Us</a> to start your journey with us.</p>
-<hr>
-<h2>Become a Debater</h2>
-<p>Open to anyone passionate about research and innovation.<br>
-Debaters can read, discuss, and submit theses by generating a keypair using <a href="https://github.com/kai5041/shoid"><strong>所ID</strong></a>.</p>
-<p>Contribute your ideas, engage in debates, and help shape the collective’s knowledge base, without legal obligations.</p>
-<hr>
-<h2>Become an Operator</h2>
-<p>Operators are official, income-generating members of HARMONY連, empowered to take on legal responsibilities.<br>
-Joining requires a legally binding agreement signed with an <strong>eIDAS-compliant electronic signature</strong>, as all members act as independent contractors.</p>
-<p>If you’re ready to step into a formal role, contact <strong>Kai (解)</strong> via <a href="/contact-us"><strong>Contact Us</strong></a>.</p>
-<blockquote>
-<p><strong>Note:</strong> Currently, only residents of Italy can become legally contracted members. International expansion is planned with support from <a href="https://github.com/kai5041/shoid"><strong>所ID</strong></a>.</p>
-</blockquote>
-<hr>
-<h2>Become a Proxy</h2>
-<p>Represent your organization within HARMONY連.<br>
-Proxies may either assign one of your staff or delegate a HARMONY連 member to act on your behalf.</p>
-<p>Proxies enjoy the same rights and responsibilities as <strong>Operators</strong>, enabling your organization to actively participate in initiatives and contribute to collective innovation.</p>
+    <link rel="stylesheet" href="/css/donate.css">
+<script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+<script src="/js/metamask-donate.js"></script>
+<p>To sustain our mission, we rely on your support. There are currently two ways to contribute:</p>
+<h3>1. Make a Donation</h3>
+<p>You can donate directly to our collective via the following Binance Smart Chain (BSC) address: <code>0x850a059814C88a51B6239F4a5be5cF46c98EB3fa</code></p>
+<div id="donate-by-metamask">
+  <p>Or by sending BNB using Metamask:</p>
+  <p>$</p>
+  <input type="number" step="any" placeholder="USD" id="donation-amount">
+  <button onclick="donate()" id="donation-btn">Donate</button>
+  <p id="show-on-success">Thank you for the donation! &#10084;</p>
+</div>
+<p>Every contribution, big or small, brings us closer to sustaining and expanding our initiatives.</p>
+<h3>2. Join Our Community</h3>
+<p>Follow us on <a href="/contact-us#social-media">social media</a> to stay updated and engage with our growing community. Your support through shares, likes, and discussions helps us reach more people and amplify our mission.</p>
+<p>We’re continuously improving our infrastructure, and this section will be updated as soon as new support options become available. Thank you for being a part of our journey!</p>
 
   </main>
 
-  <footer style="text-align: center; font-size: calc(0.9rem)">
+  <footer>
     <p>HARMONY REN・For Innovation・2025/2025</p>
   </footer>
 </body>
