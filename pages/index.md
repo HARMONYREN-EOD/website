@@ -2,13 +2,13 @@
 layout: default.njk
 title: HARMONY連 | Index
 ---
-
 <style>
 .hero {
   text-align: center;
   background-color: var(--text-color);
   color: var(--background-color);
   width: 50%;
+  max-width: 800px;
   margin: 3rem auto;
   padding: 3rem 2rem;
   border-radius: 12px;
@@ -17,7 +17,7 @@ title: HARMONY連 | Index
 
 .hero .text {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2em;
   line-height: 1.7;
 }
 
@@ -66,7 +66,67 @@ title: HARMONY連 | Index
   line-height: 1.6;
   text-align: justify;
 }
+
+/* --- Responsive Structure Reinforcements --- */
+
+@media (max-width: 1024px) {
+  .hero {
+    width: 70%;
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 90%;
+    padding: 2rem 1.2rem;
+  }
+
+  .hero .text {
+    font-size: 1.6em;
+  }
+
+  .hero a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1.8rem 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .hero .text {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+
+  .hero a {
+    width: 100%;
+    max-width: 260px;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 0 0.8rem;
+  }
+}
 </style>
+
 
 <div class="hero">
   <div class="text">
