@@ -6,6 +6,7 @@
   box-sizing: border-box;
   padding: 5px 20px;
   text-align: center;
+  border-bottom: 2px solid var(--text-color);
 }
 
 .nav ul {
@@ -22,7 +23,6 @@
 
 .nav img {
   height: 50px;
-  border: 1px solid var(--text-color);
 }
 
 .mobile-only {

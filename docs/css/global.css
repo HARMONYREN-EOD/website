@@ -9,7 +9,12 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 0;
+  margin: 0 auto;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
 }
 
 a {
@@ -20,4 +25,3 @@ a {
   background-color: var(--text-color);
   color: var(--background-color);
 }
-

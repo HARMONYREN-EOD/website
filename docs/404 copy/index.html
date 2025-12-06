@@ -9,13 +9,13 @@
 
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/nav.css">
-  <title>{{ title }}</title>
+  <title>HARMONY連 | Resource Not Found</title>
 
   <meta name="description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <link rel="canonical" href="https://harmonyren.net/">
 
-  <meta property="og:title" content="{{ title }}">
+  <meta property="og:title" content="HARMONY連 | Resource Not Found">
   <meta property="og:description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <meta property="og:url" content="https://harmonyren.net/">
@@ -58,20 +58,50 @@
 </head>
 
 <body>
-  {% include "nav.njk" %}
+  <!-- Splash screen -->
+  <div class="splash">
+    <img src="/assets/png/harmony_ren_light.png" alt="Harmony Logo">
+  </div>
+
+  <nav class="nav">
+  <img src="/assets/svg/harmony_ren_full_logo.svg" alt="HARMONY REN LOGO">
+  <button class="mobile-only">☰</button>
+
+  <ul id="nav-menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-us/">About Us</a></li>
+    <li><a href="/contact-us/">Contact Us</a></li>
+    <li><a href="/get-involved/">Get Involved</a></li>
+
+    <!--
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/get-involved/">Get Involved</a></li>
+    -->
+  </ul>
+</nav>
+<script src="/js/nav-menu-toggle.js"></script>
 
   <div class="construction-banner">
     WEBSITE UNDER CONSTRUCTION<br>
   </div>
 
   <main>
-    {{ content | safe }}
+    <h2>Resource not found</h2>
+
   </main>
 
   <footer>
-    <p>HARMONY REN・For innovation・2025/2025</p>
+    <p>HARMONY REN・For Innovation・2025/2025</p>
   </footer>
 
+  <script>
+    setTimeout(() => {
+      const splash = document.querySelector('.splash');
+      splash.classList.add('splash-hide');
+
+      splash.addEventListener('transitionend', () => splash.remove());
+    }, 500);
+  </script>
 </body>
 
 </html>
