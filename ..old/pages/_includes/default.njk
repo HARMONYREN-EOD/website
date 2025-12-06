@@ -9,13 +9,13 @@
 
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/nav.css">
-  <title>HARMONY連 | About Us</title>
+  <title>{{ title }}</title>
 
   <meta name="description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <link rel="canonical" href="https://harmonyren.net/">
 
-  <meta property="og:title" content="HARMONY連 | About Us">
+  <meta property="og:title" content="{{ title }}">
   <meta property="og:description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <meta property="og:url" content="https://harmonyren.net/">
@@ -51,34 +51,14 @@
 </head>
 
 <body>
-  <nav class="nav">
-  <img src="/assets/svg/harmony_ren_full_logo.svg" alt="HARMONY REN LOGO">
-  <button class="mobile-only">☰</button>
-
-  <ul id="nav-menu">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about-us/">About Us</a></li>
-    <li><a href="/contact-us/">Contact Us</a></li>
-    <li><a href="/get-involved/">Get Involved</a></li>
-
-    <!--
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/get-involved/">Get Involved</a></li>
-    -->
-  </ul>
-</nav>
-<script src="/js/nav-menu-toggle.js"></script>
+  {% include "nav.njk" %}
 
   <div class="construction-banner">
     WEBSITE UNDER CONSTRUCTION<br>
   </div>
 
   <main>
-    <p>HARMONY連, pronounced &quot;HARMONY REN&quot;, is an Open Innovation Collective founded in Italy by <strong>Kai (解)</strong>. Our mission is to drive research, discussion, and innovation, all grounded in ethics, fairness, and a shared vision for positive impact.</p>
-<p>We are committed to transparency while protecting everyone’s privacy.<br>
-Visit our <a href="/transparency">Transparency page</a> to see how our services and maintenance are funded.<br>
-Donations are always welcome!</p>
-
+    {{ content | safe }}
   </main>
 
   <footer>

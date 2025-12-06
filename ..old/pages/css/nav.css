@@ -22,7 +22,6 @@
 
 .nav img {
   height: 50px;
-  border: 1px solid var(--text-color);
 }
 
 .mobile-only {
