@@ -43,6 +43,8 @@
     width: 90%;
     box-shadow: none;
     background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+    border-top: none;
   }
 
   #nav-menu.active {
