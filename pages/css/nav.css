@@ -1,12 +1,19 @@
-.nav {
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 5px 20px;
-  text-align: center;
-  border-bottom: 2px solid var(--text-color);
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  transition: opacity 0.3s ease;
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 .nav ul {
@@ -15,10 +22,6 @@
   padding: 0;
   margin: 0;
   gap: 20px;
-}
-
-.nav li a {
-  text-decoration: underline;
 }
 
 .nav img {

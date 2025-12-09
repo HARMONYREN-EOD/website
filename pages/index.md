@@ -2,113 +2,186 @@
 layout: default.njk
 title: HARMONY連 | Index
 ---
+
 <style>
 .hero {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 80vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: var(--text-color);
   color: var(--background-color);
-  width: 50%;
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 0 2rem;
 }
 
-.hero .text {
-  font-style: italic;
-  font-size: 2em;
-  line-height: 1.7;
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.hero .highlight {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: 0 10px;
-  font-weight: 600;
-  border-radius: 4px;
+.hero p {
+  font-size: 1.25rem;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
-.hero a {
-  display: inline-block;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: 12px 28px;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+.hero button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
   border: 2px solid var(--text-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.hero a:hover {
+.hero button:hover {
   background-color: var(--text-color);
   color: var(--background-color);
   border: 2px solid var(--background-color);
 }
 
-.section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+section {
+  padding: 2rem 4rem;
+  text-align: center;
 }
 
-.section h2 {
-  font-size: 1.8rem;
+section h2 {
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
-  text-align: center;
 }
 
-.section p {
+section p {
+  margin: 0 auto;
   font-size: 1.1rem;
-  line-height: 1.6;
-  text-align: center;
+  max-width: 700px;
+  color: #333;
+}
+
+.highlight {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-style: italic;
 }
 
 @media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
   .hero {
-    width: 80%;
-    padding: 2.5rem 1.5rem;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
   }
 }
 
 </style>
 
-
 <div class="hero">
-  <div class="text">
-    <p>
-      Research. Propose.<br>
-      Debate. Create.<br>
-      <span class="highlight">For innovation.</span>
-    </p>
-  </div>
-  
-  <a href="/get-involved/">Get Involved</a>
+      <h2>Research. Propose. Debate. Create.</h2><br/>
+      <h2 class="highlight">For innovation.</h2>
+      <p>Join the Open Innovation Collective HARMONY連</p>
+      <button onclick="window.location.href='/get-involved'">Get Involved</button>
 </div>
 
-<div class="section" id="about">
+<section class="section" id="about">
   <h2>About Us</h2>
   <p>
     HARMONY連 (read HARMONY REN) is an Open Innovation collective focused on project proposal and innovation.
     Our goal is to cultivate ideas and transform them into actionable projects. The Collective's infrastructure is currently being built by our founder, {{ kai_placeholder }}, you can follow their progress on <a href="https://github.com/kai5041" target="_blank">GitHub</a>!
   </p>
-</div>
+</section>
 
-<div class="section" id="what-we-do">
+<section id="what-we-do">
   <h2>What We Do</h2>
   <p>
     We research topics, propose theses, debate them, and create what we discuss.<br/>
     Every opinion matters, and collaboration drives our innovation forward.
   </p>
-</div>
+</section>
 
-<div class="section" id="contact">
+<section id="contact">
   <h2>Contact Us</h2>
   <p>
     Got an idea, feedback, or want to collaborate? Or maybe you just want to chat?<br/>
     <a href="/contact-us">Reach out to us here</a> – our founder, {{ kai_placeholder }}, values every message and looks forward to connecting with everyone.
   </p>
-</div>
+</section>

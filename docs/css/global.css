@@ -1,27 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
 :root {
-  font-family: "Noto Serif JP";
+  font-family: "Noto Serif JP", serif;
   --background-color: #FFFFFF;
   --text-color: #000000;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 0 auto;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 main {
-  width: 95%;
   margin: 0 auto;
+  padding: 1em;
+}
+
+footer {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 2em 0;
+}
+
+footer a {
+  color: var(--background-color);
+}
+
+.company-info {
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 2em;
+}
+
+footer ::selection {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 a {
   color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ::selection {
   background-color: var(--text-color);
   color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 1.5em 0;
+  }
+
+  .company-info {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  main {
+    width: 95%;
+    padding: 0.5em;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1em 0;
+  }
+
+  .company-info {
+    padding: 0 0.5em;
+  }
 }

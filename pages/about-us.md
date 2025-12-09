@@ -1,6 +1,4 @@
 ---
 layout: default.njk
-title: HARMONY連 | Get Involved
+title: HARMONY連 | About Us
 ---
-
-## Coming Soon
