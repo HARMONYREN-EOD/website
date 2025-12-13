@@ -1,0 +1,68 @@
+.work-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+.work-text {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.page-number {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  border-top: 1px solid var(--text-color);
+  background-color: var(--background-color);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+
+.bottom-bar a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid var(--text-color);
+  padding: 1rem 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bottom-bar a:last-child {
+  border-right: none;
+}
+
+.bottom-bar a:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.bottom-bar input {
+  flex: 1;
+  text-align: center;
+  border: none;
+  border-right: 1px solid var(--text-color);
+  padding: 1rem 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.bottom-bar input:focus {
+  outline: none;
+}

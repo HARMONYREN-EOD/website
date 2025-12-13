@@ -8,13 +8,13 @@
   <link rel="icon" href="/assets/png/harmony_ren_light.png" type="image/png">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/nav.css">
-  <title>{{ title }}</title>
+  <title>HARMONY連 | Transparency</title>
 
   <meta name="description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <link rel="canonical" href="https://harmonyren.net/">
 
-  <meta property="og:title" content="{{ title }}">
+  <meta property="og:title" content="HARMONY連 | Transparency">
   <meta property="og:description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <meta property="og:url" content="https://harmonyren.net/">
@@ -67,18 +67,70 @@
 </head>
 
 <body>
-  {% include "nav.njk" %}
+  <header class="nav">
+  <img src="/assets/svg/harmony_ren_full_logo.svg" alt="HARMONY REN LOGO">
+  <button class="mobile-only">☰</button>
+
+  <ul id="nav-menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-us/">About Us</a></li>
+    <li><a href="/transparency/">Transparency</a></li>
+    <li><a href="/contact-us/">Contact Us</a></li>
+    <li><a href="/get-involved/">Get Involved</a></li>
+
+    <!--
+    <li><a href="/projects/">Projects</a></li>
+    -->
+  </ul>
+</header>
+<script src="/js/nav-menu-toggle.js"></script>
 
   <div class="construction-banner">
     WEBSITE UNDER CONSTRUCTION<br>
   </div>
 
   <main>
-    {{ content | safe }}
+    <style>
+  table {
+    border: 1px solid var(--text-color);
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  table tr {
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  table td {
+    padding: 0.5em;
+  }
+
+  table tr:nth-child(n+2):nth-child(odd) {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
+  
+</style>
+<h1>Transparency</h1>
+<p>We share the costs we have to pay to offer our services. Donations are welcome <a href="/get-involved/#become-a-donor"><strong>here</strong></a>!</p>
+<table id="costs-table"></table>
+<script src="/js/fill-table-csv.js"></script>
+<script>
+  fill_table_csv('/assets/csv/transparency.csv', 'costs-table');
+</script>
+<h2>Donations</h2>
+<table id="donations-table"></table>
+<script>
+  fill_table_csv('/assets/csv/donations.csv', 'donations-table');
+</script>
+
   </main>
 
   <footer>
-    <p>{{ company_display_name }}・For innovation・{{ year_range }}</p>
+    <p>HARMONY連・For innovation・2025/2025</p>
     <p>
       <a href="/privacy-policy">Privacy Policy</a> |
       <a href="/terms-and-conditions">Terms & Conditions</a> |
@@ -87,8 +139,8 @@
     <p>All rights reserved.</p>
 
     <div class="company-info">
-      <p>&copy; {{ year_range }} {{ company_legal_name }} | VAT: {{ company_vat }}</p>
-      <p>Residence: {{ company_residence }}</p>
+      <p>&copy; 2025/2025 COMING SOON | VAT: COMING SOON</p>
+      <p>Residence: COMING SOON</p>
       <p>Contact: <a href="/contact-us">Visit Contact Page</a> (all communication channels here)</p>
     </div>
   </footer>

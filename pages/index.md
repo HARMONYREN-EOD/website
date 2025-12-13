@@ -162,23 +162,26 @@ section p {
       <button onclick="window.location.href='/get-involved'">Get Involved</button>
 </div>
 
-<section class="section" id="about">
+<section id="about-us">
   <h2>About Us</h2>
   <p>
-    HARMONY連 (read HARMONY REN) is an Open Innovation collective focused on project proposal and innovation.
-    Our goal is to cultivate ideas and transform them into actionable projects. The Collective's infrastructure is currently being built by our founder, {{ kai_placeholder }}, you can follow their progress on <a href="https://github.com/kai5041" target="_blank">GitHub</a>!
+    HARMONY連 (read HARMONY REN) is an Open Innovation collective focused on research, thesis proposals, debating in critical discussion and create innovative works.<br/>
+    We cultivate curiosity, spark discussion and transform concepts into ambitious real projects.<br/>
+    The founder, {{ kai_placeholder }}, is building the infrastructure from the ground up - you can even track their progress on <a href="https://github.com/kai5041" target="_blank">GitHub</a>.
   </p>
 </section>
 
 <section id="what-we-do">
   <h2>What We Do</h2>
   <p>
-    We research topics, propose theses, debate them, and create what we discuss.<br/>
-    Every opinion matters, and collaboration drives our innovation forward.
+    <strong>Research. Propose. Debate. Create.</strong><br/>
+    Every perspective matters. And collaboration drives our innovation forward. Every project is a chance to learn, challenge and innovate.
+    <br/>
+    Every voice shapes what we create.
   </p>
 </section>
 
-<section id="contact">
+<section id="contact-us">
   <h2>Contact Us</h2>
   <p>
     Got an idea, feedback, or want to collaborate? Or maybe you just want to chat?<br/>
