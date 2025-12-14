@@ -6,8 +6,8 @@ title: 所Pay | Create Invoice
 <link rel="stylesheet" href="../css/shopay.css">
 <script src="../js/aggiungi_voce.js"></script>
 
-> NOTA: QUESTA PAGINA E' INTENDATA PER GLI UTENTI ITALIANI  
-> NOTE: THIS PAGE IS INTENDED FOR ITALIAN USERS  
+> NOTA: QUESTA PAGINA E' INTESA SOLO PER GLI UTENTI ITALIANI  
+> NOTE: THIS PAGE IS INTENDED FOR ITALIAN USERS ONLY  
 
 > NOTE: ANCORA IN SVILUPPO
 
