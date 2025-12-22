@@ -10,7 +10,7 @@ header {
   text-decoration: none;
 }
 
-.nav a:hover {
+.nav a:not(.logo):hover {
   transition: opacity 0.3s ease;
   background-color: var(--text-color);
   color: var(--background-color);
