@@ -116,6 +116,15 @@ blockquote {
   }
 }
 
-h2 {
-  margin-bottom: -0.5em;
+table {
+  border: 1px solid var(--text-color);
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid var(--text-color);
+  padding: 0.5em;
 }

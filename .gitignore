@@ -3,3 +3,5 @@ node_modules
 docs/*.md
 docs/**/*.md
 docs/_includes
+
+shopay
