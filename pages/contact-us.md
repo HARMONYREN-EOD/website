@@ -15,6 +15,11 @@ title: HARMONY連 | Contact Us
 ---
 
 ## Stay updated and join our community
+**{{ kai_placeholder }}'s Instagram**: [@kai5041._](https://www.instagram.com/kai5041._)  
+**{{ kai_placeholder }}'s YouTube**: [@kai_5041](https://www.youtube.com/@kai_5041)  
+**{{ kai_placeholder }}'s GitHub**: [@kai5041](https://www.github.com/kai5041/)  
+**{{ kai_placeholder }}'s ORCID**: [View here](https://orcid.org/0009-0006-9358-2098/)  
+
 **Instagram**: [@harmonyren.official](https://www.instagram.com/harmonyren.official/)  
 **YouTube**: [@HARMONYREN](https://www.youtube.com/@HARMONYREN)  
 **Twitter/X**: [@OIC_HARMONYREN](https://x.com/OIC_HARMONYREN)  

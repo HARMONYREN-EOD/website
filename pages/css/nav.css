@@ -10,10 +10,22 @@ header {
   text-decoration: none;
 }
 
-.nav a:not(.logo):hover, .nav button:hover {
+.nav button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  position: relative;
+  z-index: 9999;
+}
+
+
+.nav a:not(.logo):hover,
+.nav button:hover {
   transition: opacity 0.3s ease;
   background-color: var(--text-color);
   color: var(--background-color);
+  transition: all 0.3s ease;
 }
 
 .nav ul {
@@ -32,7 +44,7 @@ header {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   #nav-menu {
     display: none;
     flex-direction: column;
@@ -43,7 +55,7 @@ header {
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 100%;
     box-shadow: none;
     background-color: var(--background-color);
     border: 1px solid var(--text-color);

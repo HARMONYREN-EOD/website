@@ -6,6 +6,10 @@
   --text-color: #000000;
 }
 
+button {
+  font-family: "Noto Serif JP", serif;
+}
+
 *,
 *::before,
 *::after {

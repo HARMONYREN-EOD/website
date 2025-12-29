@@ -19,9 +19,9 @@ Sign the downloaded contract with the account you created at [所ID](/services/s
 
 | Fiscal residence | Name                                                             | Download link     |
 | :--------------: | :--------------------------------------------------------------- | :---------------- |
-|     Italiano     | Contratto di collaborazione coordinata e continuativa (co.co.co) | [scarica](/)      |
-|     English      | 1099-NEC (Coming soon)                                           | [download](/)     |
-|      日本語      | 業務委託契約 (Coming soon)                                       | [ダウンロード](/) |
+|   **Italiano**   | Contratto di collaborazione coordinata e continuativa (co.co.co) | [scarica](/)      |
+|   **English**    | 1099-NEC (Coming soon)                                           | [download](/)     |
+|    **日本語**    | 業務委託契約 (準備中)                                       | [ダウンロード](/) |
 
 
 ## Join as a Volunteer Operator
