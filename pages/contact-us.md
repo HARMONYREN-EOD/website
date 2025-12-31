@@ -14,7 +14,8 @@ title: HARMONY連 | Contact Us
 
 ---
 
-## Stay updated and join our community
+<h2 id="stay-updated">Stay updated and join our community</h2>
+
 **{{ kai_placeholder }}'s Instagram**: [@kai5041._](https://www.instagram.com/kai5041._)  
 **{{ kai_placeholder }}'s YouTube**: [@kai_5041](https://www.youtube.com/@kai_5041)  
 **{{ kai_placeholder }}'s GitHub**: [@kai5041](https://www.github.com/kai5041/)  

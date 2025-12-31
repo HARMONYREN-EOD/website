@@ -1,0 +1,35 @@
+.latest-news {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 15px 10px;
+  z-index: 1000;
+  border-top: 1px solid var(--background-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.latest-news .title {
+  font-weight: 600;
+}
+
+.latest-news p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.latest-news a {
+  color: var(--background-color);
+}
+
+@media (max-width: 600px) {
+  .latest-news {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
+}

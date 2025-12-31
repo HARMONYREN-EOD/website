@@ -8,6 +8,7 @@
   <link rel="icon" href="/assets/png/harmony_ren_light.png" type="image/png">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/latest-news.css">
   <title>{{ title }}</title>
 
   <meta name="description"
@@ -79,6 +80,11 @@
     {{ content | safe }}
   </main>
 
+  <div class="latest-news">
+    <p class="title">Latest news: </p>
+    <p class="text">{{kai_placeholder}} is creating a videogame, check them out <a href="/contact-us#stay-updated">here</a>!</p>
+  </div>
+
   <footer>
     <p>{{ company_display_name }}・For innovation・{{ year_range }}</p>
     <p>
@@ -94,6 +100,7 @@
       <p>Contact: <a href="/contact-us">Visit Contact Page</a> (all communication channels here)</p>
     </div>
   </footer>
+
 </body>
 
 </html>
