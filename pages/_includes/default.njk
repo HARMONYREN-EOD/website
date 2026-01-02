@@ -80,10 +80,14 @@
     {{ content | safe }}
   </main>
 
+  <!--
+
   <div class="latest-news">
     <p class="title">Latest news: </p>
-    <p class="text">{{kai_placeholder}} is creating a videogame, check them out <a href="/contact-us#stay-updated">here</a>!</p>
+    <p class="text">{{kai_placeholder}} is creating a videogame, check them out <a
+        href="/contact-us#stay-updated">here</a>!</p>
   </div>
+  -->
 
   <footer>
     <p>{{ company_display_name }}・For innovation・{{ year_range }}</p>
@@ -94,12 +98,34 @@
     </p>
     <p>All rights reserved.</p>
 
+    <div id="page-end"></div>
+
     <div class="company-info">
       <p>&copy; {{ year_range }} {{ company_legal_name }} | VAT: {{ company_vat }}</p>
       <p>Residence: {{ company_residence }}</p>
-      <p>Contact: <a href="/contact-us">Visit Contact Page</a> (all communication channels here)</p>
+      <p>Contact: <a href="/contact-us">Visit Contact Page</a></p>
     </div>
   </footer>
+
+
+  <!--
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const latestNews = document.querySelector('.latest-news');
+      const footer = document.querySelector('footer');
+      if (!latestNews || !footer) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          latestNews.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+        },
+        { threshold: 0 }
+      );
+
+      observer.observe(footer);
+    });
+  </script>
+-->
 
 </body>
 

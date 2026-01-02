@@ -51,22 +51,6 @@ title: HARMONY連 | Index
     border: 2px solid var(--background-color);
   }
 
-  section {
-    padding: 2rem 4rem;
-    text-align: center;
-  }
-
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  section p {
-    margin: 0 auto;
-    font-size: 1.1rem;
-    max-width: 700px;
-  }
-
   .highlight {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -83,18 +67,6 @@ title: HARMONY連 | Index
 
     .hero p {
       font-size: 1.1rem;
-    }
-
-    section h2 {
-      font-size: 1.75rem;
-    }
-
-    section p {
-      font-size: 1rem;
-    }
-
-    section {
-      padding: 2rem;
     }
   }
 
@@ -141,23 +113,11 @@ title: HARMONY連 | Index
       padding: 0.75rem;
       font-size: 0.9rem;
     }
-
-    section {
-      padding: 1.5rem 1rem;
-    }
-
-    section h2 {
-      font-size: 1.3rem;
-    }
-
-    section p {
-      font-size: 0.9rem;
-    }
   }
 </style>
 
 <div class="hero">
-  <h2>Research. Propose. Debate. Create.</h2><br />
+  <h2>Research. Propose.<br/>Debate. Create.</h2><br />
   <h2 class="highlight">For innovation.</h2>
   <p>Join the Open Innovation Collective HARMONY連</p>
   <button onclick="window.location.href='/get-involved'">Get Involved</button>
@@ -167,67 +127,75 @@ title: HARMONY連 | Index
   const hero = document.querySelector('.hero');
   const h2s = hero.querySelectorAll('h2');
 
-  const texts = [
-    ["Research. Propose. Debate. Create.", "For innovation."],
-    ["研究。提案。討論。創造。", "革新の為に。"]
+  const variants = [
+    {
+      main: "Research. Propose.<br/>Debate. Create.",
+      sub: "For innovation."
+    },
+    {
+      main: "研究。提案。<br/>討論。創造。",
+      sub: "革新の為に。"
+    }
   ];
 
-  let toggle = false;
+  let index = 0;
 
-  function scrollTextChange() {
-    h2s.forEach((h2, i) => {
-      h2.style.transform = "translateY(-100%)";
+  function switchText() {
+    h2s.forEach(h2 => {
       h2.style.opacity = 0;
+      h2.style.transform = "translateY(20px)";
     });
 
     setTimeout(() => {
-      toggle = !toggle;
-      h2s[0].textContent = texts[toggle ? 1 : 0][0];
-      h2s[1].textContent = texts[toggle ? 1 : 0][1];
-      h2s.forEach(h2 => {
-        h2.style.transform = "translateY(100%)";
-        h2.style.opacity = 0;
-      });
+      index = (index + 1) % variants.length;
 
-      h2s.forEach(h2 => h2.offsetHeight);
+      h2s[0].innerHTML = variants[index].main;
+      h2s[1].innerHTML = variants[index].sub;
 
       h2s.forEach(h2 => {
-        h2.style.transform = "translateY(0)";
+        h2.offsetHeight;
         h2.style.opacity = 1;
+        h2.style.transform = "translateY(0)";
       });
-    }, 250);
+    }, 300);
   }
 
-  setInterval(scrollTextChange, 3000);
+  setInterval(switchText, 5000);
 </script>
 
-<section id="about-us">
+<style>
+  section {
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+  section p {
+    font-size: 0.95rem;
+    padding: 0;
+  }
+}
+
+</style>
+
+
+<section>
   <h2>About Us</h2>
   <p>
-    HARMONY連 (read HARMONY REN) is an Open Innovation collective focused on research, thesis proposals, debating in
-    critical discussion and create innovative works.<br />
-    We cultivate curiosity, spark discussion and transform concepts into ambitious real projects.<br />
-    The founder, {{ kai_placeholder }}, is building the infrastructure from the ground up - you can even track their
-    progress on <a href="https://github.com/kai5041" target="_blank">GitHub</a>.
+    HARMONY連 (read HARMONY REN) is an Open Innovation collective focused on research, thesis proposals, debating in critical discussion, and creating innovative works.  
+    We cultivate curiosity, spark discussion, and transform concepts into ambitious real projects.  
+    The founder, {{ kai_placeholder }}, is building the infrastructure from the ground up — you can even track their progress on <a href="https://github.com/kai5041">GitHub</a>.
   </p>
-</section>
 
-<section id="what-we-do">
   <h2>What We Do</h2>
   <p>
-    <strong>Research. Propose. Debate. Create.</strong><br />
-    Every perspective matters. And collaboration drives our innovation forward. Every project is a chance to learn,
-    challenge and innovate.
-    <br />
+    <strong>Research. Propose. Debate. Create.</strong>  
+    Every perspective matters. Collaboration drives our innovation forward. Every project is a chance to learn, challenge, and innovate.  
     Every voice shapes what we create.
   </p>
-</section>
 
-<section id="contact-us">
   <h2>Contact Us</h2>
   <p>
-    Got an idea, feedback, or want to collaborate? Or maybe you just want to chat?<br />
-    <a href="/contact-us">Reach out to us here</a> – our founder, {{ kai_placeholder }}, values every message and looks
-    forward to connecting with everyone.
+    Got an idea, feedback, or want to collaborate? Or maybe you just want to chat?  
+    <a href="/contact-us">Reach out to us here</a> – our founder, {{ kai_placeholder }}, values every message and looks forward to connecting with everyone.
   </p>
 </section>

@@ -112,13 +112,17 @@ You can become:</p>
 
   </main>
 
+  <!--
+
   <div class="latest-news">
     <p class="title">Latest news: </p>
-    <p class="text">Kai (解) is creating a videogame, check them out <a href="/contact-us#stay-updated">here</a>!</p>
+    <p class="text">Kai (解) is creating a videogame, check them out <a
+        href="/contact-us#stay-updated">here</a>!</p>
   </div>
+  -->
 
   <footer>
-    <p>HARMONY連・For innovation・2025/2025</p>
+    <p>HARMONY連・For innovation・2025/2026</p>
     <p>
       <a href="/privacy-policy">Privacy Policy</a> |
       <a href="/terms-and-conditions">Terms & Conditions</a> |
@@ -126,12 +130,34 @@ You can become:</p>
     </p>
     <p>All rights reserved.</p>
 
+    <div id="page-end"></div>
+
     <div class="company-info">
-      <p>&copy; 2025/2025 COMING SOON | VAT: COMING SOON</p>
+      <p>&copy; 2025/2026 COMING SOON | VAT: COMING SOON</p>
       <p>Residence: COMING SOON</p>
-      <p>Contact: <a href="/contact-us">Visit Contact Page</a> (all communication channels here)</p>
+      <p>Contact: <a href="/contact-us">Visit Contact Page</a></p>
     </div>
   </footer>
+
+
+  <!--
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const latestNews = document.querySelector('.latest-news');
+      const footer = document.querySelector('footer');
+      if (!latestNews || !footer) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          latestNews.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+        },
+        { threshold: 0 }
+      );
+
+      observer.observe(footer);
+    });
+  </script>
+-->
 
 </body>
 

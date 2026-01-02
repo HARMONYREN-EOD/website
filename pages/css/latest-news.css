@@ -6,12 +6,20 @@
   background-color: var(--text-color);
   color: var(--background-color);
   padding: 15px 10px;
-  z-index: 1000;
-  border-top: 1px solid var(--background-color);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  z-index: 1000;
+  border-top: 1px solid var(--background-color);
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.latest-news.hide {
+  transform: translateY(100%);
+  opacity: 0;
 }
 
 .latest-news .title {
