@@ -6,16 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="/assets/png/harmony_ren_light.png" type="image/png">
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/nav.css">
-  <link rel="stylesheet" href="/css/latest-news.css">
-  <title>HARMONY連 | The Fall Of The Abyss</title>
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <title>{ title }</title>
 
   <meta name="description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <link rel="canonical" href="https://harmonyren.net/">
 
-  <meta property="og:title" content="HARMONY連 | The Fall Of The Abyss">
+  <meta property="og:title" content="{{ title }}">
   <meta property="og:description"
     content="Research. Propose. Debate. Create. For innovation. Join the Open Innovation Collective HARMONY連.">
   <meta property="og:url" content="https://harmonyren.net/">
@@ -68,23 +67,7 @@
 </head>
 
 <body>
-  <header class="nav">
-  <a href="/" class="logo">
-    <img src="/assets/svg/harmony_ren_full_logo.svg" alt="HARMONY REN LOGO">
-  </a>
-
-
-  <ul id="nav-menu">
-    <li><a href="/">Home</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/services/">Services</a></li>
-    <li><a href="/about-us/">About Us</a></li>
-    <li><a href="/transparency/">Transparency</a></li>
-    <li><a href="/contact-us/">Contact Us</a></li>
-    <li><a href="/get-involved/">Get Involved</a></li>
-  </ul>
-</header>
-
+  { nav }
 
   <!--
   <div class="construction-banner">
@@ -93,20 +76,11 @@
   -->
 
   <main>
-    
+    { main }
   </main>
 
-  <!--
-
-  <div class="latest-news">
-    <p class="title">Latest news: </p>
-    <p class="text">Kai (解) is creating a videogame, check them out <a
-        href="/contact-us#stay-updated">here</a>!</p>
-  </div>
-  -->
-
   <footer>
-    <p>HARMONY連・For innovation・2025/2026</p>
+    <p>{ company_display_name }・For innovation・{ year_range }</p>
     <p>
       <a href="/privacy-policy">Privacy Policy</a> |
       <a href="/terms-and-conditions">Terms & Conditions</a> |
@@ -117,31 +91,11 @@
     <div id="page-end"></div>
 
     <div class="company-info">
-      <p>&copy; 2025/2026 COMING SOON | VAT: COMING SOON</p>
-      <p>Residence: COMING SOON</p>
+      <p>&copy; { year_range } { company_legal_name } | VAT: { company_vat }</p>
+      <p>Residence: { company_residence }</p>
       <p>Contact: <a href="/contact-us">Visit Contact Page</a></p>
     </div>
   </footer>
-
-
-  <!--
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const latestNews = document.querySelector('.latest-news');
-      const footer = document.querySelector('footer');
-      if (!latestNews || !footer) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          latestNews.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
-        },
-        { threshold: 0 }
-      );
-
-      observer.observe(footer);
-    });
-  </script>
--->
 
 </body>
 
