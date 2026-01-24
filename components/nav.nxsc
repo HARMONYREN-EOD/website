@@ -1,0 +1,29 @@
+<div>
+  <button id="lang-toggle" aria-label="Change language"><img src="/assets/svg/lang.svg" /></button>
+  
+  <div id="lang-overlay"></div>
+  <div id="lang-menu">
+    <p data-lang="ja">日本語 (作成)</p>
+    <p data-lang="en">English</p>
+    <p data-lang="it">Italiano</p>
+  </div>
+</div>
+
+
+<script src="/js/lang.js"></script>
+
+<header class="nav">
+  <a href="/" class="logo">
+    <img src="/assets/svg/harmonyren_full_logo.svg" alt="HARMONY REN LOGO">
+  </a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-us">About Us</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/contact-us">Contact Us</a></li>
+    <li><a href="/get-involved">Get Involved</a></li>
+  </ul>
+</header>
+
+<div class="under-construction">UNDER CONSTRUCTION</div>

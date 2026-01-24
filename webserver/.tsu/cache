@@ -1,1 +1,0 @@
-src/main.cpp | g++ -c src/main.cpp -o build/main.o -Wall -Iinclude -Iinclude/uWebSockets -O0 -g1 -fno-omit-frame-pointer | 03bd18a96e57690453feb3725a4ffe320af7e7de3c486a597d49fe7d309ee3692f23d71f75328bc530a96f6963d98a06f59555344ab47beeaefb934aa1292421

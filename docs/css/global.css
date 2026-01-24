@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/ttf/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('/assets/fonts/ttf/NotoSerifJP-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #FFFFFF;
+  --text-color: #000000;
+  --accent-color: #ECFF00;
+}
+
+*::selection {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+html,
+body {
+  font-family: "Noto Serif JP";
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--background-color)
+}
+
+a {
+  color: var(--text-color);
+}
+
+
+.under-construction {
+  font-family: "Montserrat";
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3em;
+  margin-bottom: 10px;
+  border-top: 3px solid var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}

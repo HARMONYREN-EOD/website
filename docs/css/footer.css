@@ -1,0 +1,10 @@
+footer {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+footer a {
+  color: var(--accent-color);
+}

@@ -1,0 +1,57 @@
+.motto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-size: 1.5em;
+  width: min(50vw, 700px);
+  height: min(30vh, 260px);
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: 15px;
+
+  gap: 0.35em;
+}
+
+.motto p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.motto .highlight {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0.2em 0.6em;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.motto .btn {
+  display: inline-block;
+
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.5em 1.1em;
+  margin-top: 0.6em;
+
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.motto .btn:hover {
+  background-color: transparent;
+  color: var(--background-color);
+  border: 1px solid var(--accent-color);
+}
