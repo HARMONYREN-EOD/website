@@ -1,3 +1,4 @@
+/* Overlay */
 #lang-overlay {
   display: none;
   position: fixed;
@@ -9,12 +10,12 @@
   z-index: 9998;
 }
 
+/* Language Menu */
 #lang-menu {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   background-color: var(--text-color);
   color: var(--background-color);
   border: 3px solid var(--accent-color);
@@ -32,8 +33,13 @@
   width: 50vw;
   height: 50vw;
   pointer-events: auto;
+  max-width: 700px;
+  max-height: 700px;
+
+  box-sizing: border-box;
 }
 
+/* Language Options */
 #lang-menu p {
   font-size: 2em;
   margin: 0.2em 0;
@@ -46,6 +52,7 @@
   cursor: pointer;
 }
 
+/* Toggle Button */
 #lang-toggle {
   background: none;
   border: none;
@@ -62,4 +69,33 @@
   display: block;
   width: 24px;
   height: 24px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  #lang-menu {
+    width: 70vw;
+    height: auto;
+    padding: 1em 1.5em;
+  }
+
+  #lang-menu p {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  #lang-menu {
+    width: 90vw;
+    padding: 0.8em 1em;
+  }
+
+  #lang-menu p {
+    font-size: 1.2em;
+  }
+
+  #lang-toggle {
+    right: 16px;
+    top: 16px;
+  }
 }

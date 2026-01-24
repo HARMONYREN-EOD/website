@@ -30,13 +30,13 @@
   color: var(--text-color);
   transition: all 0.3s ease;
   border-radius: 5px;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
 }
 
 .nav ul li a:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
-  border-right: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
+  border-right: 3px solid var(--text-color);
+  border-left: 3px solid var(--text-color);
 }
