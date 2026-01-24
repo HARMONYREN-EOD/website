@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: 'Montserrat';
   src: url('/assets/fonts/ttf/Montserrat-VariableFont_wght.ttf') format('truetype');
@@ -11,6 +12,9 @@
   font-weight: 100 900;
   font-style: normal;
 }
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
 
 :root {
   --background-color: #FFFFFF;
