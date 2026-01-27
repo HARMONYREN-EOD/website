@@ -1,0 +1,22 @@
+<p>Currently, the founder, { founder_placeholder }, personally supervises and directs the provision of the following services:</p>
+<ul>
+  <li>Advanced Technical Problem Solving & Optimization</li>
+  <li>Custom Software Development in C++, Python, and TypeScript</li>
+  <li>Automation Tools & System Utilities</li>
+  <li>High-Performance Dynamic and Static Websites in C++</li>
+  <li>Cloud Infrastructure & Scalable Hosting Solutions</li>
+  <li>Database Design, Deployment, and Optimization</li>
+  <li>Secure Cryptographic Systems & Data Protection</li>
+</ul>
+
+<p>All service agreements shall be executed in a digital format in full compliance with <strong>eIDAS regulations</strong>.<br/>For the purposes of validity, electronically scanned signatures shall be deemed legally acceptable.</p>
+
+<div style="text-align: center; margin: 2em 0;">
+  <a href="/contact-us.html" 
+     style="display: inline-block; padding: 1em 2em; font-size: 1.5em; font-weight: bold; 
+            text-decoration: none; color: var(--background-color); background-color: var(--text-color); 
+            border-radius: 8px;">
+    Contact Us
+  </a>
+</div>
+

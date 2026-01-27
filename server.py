@@ -34,3 +34,4 @@ if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", PORT), NoHTMLExtensionHandler)
     print(f"Serving from {DOCS_DIR} on http://127.0.0.1:{PORT}/ …")
     server.serve_forever()
+
