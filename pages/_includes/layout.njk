@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAIREN | {{ title }}</title>
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/svg/rairen_logo_light.svg">
+
+</head>
+
+<body>
+  <div class="nav" id="nav">
+    <a href="/" class="company-logo">
+      <img src="/assets/svg/rairen_logo_full_light.svg" alt="Company Logo">
+    </a>
+
+    <div class="nav-menu" id="nav-menu">
+      {% include "nav.njk" %}
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+
+  {{ content | safe }}
+
+
+</body>
+
+</html>

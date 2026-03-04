@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="151.32085"
+       y="173.94827"
+       width="722.66315"
+       height="643.46716"
+       id="rect2" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#f0f0f0;stroke:#f0f0f0;stroke-width:0;stroke-dasharray:none"
+       id="rect1"
+       width="1024"
+       height="1024"
+       x="0"
+       y="0" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:533.333px;line-height:0.4;font-family:'Noto Serif JP';-inkscape-font-specification:'Noto Serif JP, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#0f0f0f;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       transform="translate(-1.7194411,232.1838)"
+       x="361.33157"
+       y="0"><tspan
+         x="245.98584"
+         y="483.28236"
+         id="tspan1">連</tspan></text>
+  </g>
+</svg>

@@ -1,4 +1,5 @@
-services/
-projects/
+node_modules
 
-*.tmpt*
+**/about-us*
+**/services*
+**/projects*
