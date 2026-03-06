@@ -16,9 +16,12 @@
 
   --max-width-tablet: 768px;
   --max-width-phone: 480px;
-
-  --max-width-main: 1200px;
 }
+
+/*
+max-width-tablet: 768px
+max-width-phone: 480px
+*/
 
 * {
   box-sizing: border-box;
@@ -54,21 +57,20 @@ hr {
 main {
   margin: 0 auto;
   width: 60%;
-  max-width: var(--max-width-main);
   padding: 1rem;
 }
 
 .contact-info {
   margin: 1rem 0;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-info a {
   text-decoration: underline;
 }
 
-@media (max-width: var(--max-width-tablet)) {
+@media (max-width: 768px) {
   main {
     width: 100%;
     padding: 0.5rem;
@@ -80,13 +82,13 @@ main {
   }
 }
 
-@media (max-width: var(--max-width-phone)) {
+@media (max-width: 480px) {
   body {
-    font-size: clamp(0.8rem, 3vw, 1rem);
+    font-size: clamp(0.95rem, 3vw, 1.05rem);
   }
 
   main {
-    padding: 0.25rem;
+    width: 92%;
   }
 
   hr {
@@ -94,6 +96,6 @@ main {
   }
 
   .contact-info {
-    font-size: clamp(0.8rem, 3vw, 0.95rem);
+    font-size: clamp(0.9rem, 2.8vw, 1rem);
   }
 }

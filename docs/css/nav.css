@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  max-width: 1200px;
+  width: 60%;
   margin: 0 auto;
+  border-bottom: 1px solid var(--fgc);
 }
 
 .company-logo img {
@@ -42,12 +43,17 @@
 
 .nav-toggle {
   display: none;
+  background-color: var(--bgc);
+  color: var(--fgc);
+  padding: 20px 20px;
+  font-size: 2em;
+  border: none;
 }
 
-@media (max-width: var(--max-width-tabled)) {
+@media (max-width: 768px) {
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .nav-menu {
@@ -60,6 +66,7 @@
 
   .nav-toggle {
     display: block;
+    margin-left: auto;
   }
 
   .nav-menu.active {
@@ -69,4 +76,10 @@
 
 #nav-toggle {
   display: none;
+}
+
+@media (max-width: 480px) {
+  #nav-toggle {
+    display: block;
+  }
 }

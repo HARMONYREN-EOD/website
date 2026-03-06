@@ -22,12 +22,12 @@
       {% include "nav.njk" %}
     </div>
 
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" onclick="nav_toggle()">☰</button>
   </div>
 
   {{ content | safe }}
 
-
+  <script src="/js/mobile.js"></script>
 </body>
 
 </html>
