@@ -56,13 +56,11 @@ hr {
 
 main {
   margin: 0 auto;
-  width: 60%;
   padding: 1rem;
 }
 
 .contact-info {
   margin: 1rem 0;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
   overflow-wrap: break-word;
 }
 
@@ -85,10 +83,6 @@ main {
 @media (max-width: 480px) {
   body {
     font-size: clamp(0.95rem, 3vw, 1.05rem);
-  }
-
-  main {
-    width: 92%;
   }
 
   hr {
