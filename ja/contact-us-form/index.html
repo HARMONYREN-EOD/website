@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>来連 | 連絡</title>
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/svg/rairen_logo_light.svg">
+
+</head>
+
+<body>
+  <div class="nav" id="nav">
+  <a href="/ja/" class="company-logo">
+    <img src="/assets/svg/rairen_logo_full_light.svg" alt="Company Logo">
+  </a>
+
+  <div class="nav-menu" id="nav-menu">
+    <header id="nav-header" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="/ja/" aria-current="page">主要頁</a></li>
+        <li><a href="/ja/services/">業務</a></li>
+        <li><a href="/ja/projects/">計画</a></li>
+        <li><a href="/ja/about-us/">概要</a></li>
+        <li><a href="/ja/contact-us/">連絡</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" onclick="nav_toggle()">☰</button>
+</div>
+
+<div class="nav-backdrop" id="nav-backdrop"></div>
+  
+  
+<style>
+  .contact-us-form {
+    margin-left: 1vw;
+  }
+
+  .selection-box {
+    border: 1px solid var(--fgc);
+    width: 40vw;
+    height: 5vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    background-color: var(--bgc);
+    position: relative;
+  }
+
+  .selection-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .selection-item div:last-child {
+    border-left: 1px solid var(--fgc);
+    padding-left: 2vw;
+  }
+
+  .selection-item-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--fgc);
+    background-color: var(--bgc);
+    z-index: 1000;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .dropdown-item:hover {
+    background-color: var(--bgc-soft);
+  }
+
+  .contact-us-form label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-us-form .field {
+    margin-bottom: 0.5rem;
+  }
+
+  .selection-box,
+  input,
+  textarea {
+    display: block;
+    width: 40vw;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid var(--fgc);
+    background-color: var(--bgc);
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid var(--fgc);
+  }
+
+  .delete-underline {
+    color: var(--red);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>
+
+
+
+<div class="contact-us-form">
+  <p>THIS IS STILL A TEST</p>
+  <h1>Contact Us</h1>
+  <label for="country-of-incorporation"><span>Country of incorporation</span> *</label>
+  <div class="selection-box" id="country-of-incorporation">
+    <div class="selection-item shown">
+      <div class="selection-item-image"></div>
+      <div class="selection-item-text">
+        <p>- Select country -</p>
+      </div>
+    </div>
+  </div>
+
+  <label for="fiscal-residence"><span>Fiscal residence</span> *</label>
+  <div class="selection-box" id="fiscal-residence">
+    <div class="selection-item shown">
+      <div class="selection-item-image"></div>
+      <div class="selection-item-text">
+        <p>- Select country -</p>
+      </div>
+    </div>
+  </div>
+
+  <label for="preferred-currency"><span>Preferred currency</span> *</label>
+  <div class="selection-box" id="preferred-currency">
+    <div class="selection-item shown">
+      <div class="selection-item-image"></div>
+      <div class="selection-item-text">
+        <p>- Select currency -</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="company-vat"><span>Company VAT number</span> *</label>
+    <input id="company-vat" />
+  </div>
+
+  <div class="field">
+    <label for="company-address"><span>Company address</span> *</label>
+    <input id="company-address" />
+  </div>
+
+  <div class="field">
+    <label for="website"><span>Website</span> *</label>
+    <input id="website" />
+  </div>
+
+  <div class="field">
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Item 1</td>
+          <td>Note 1</td>
+          <td class="delete-underline">Delete</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="field">
+    <label for="additional-info"><span>Additional information</span></label>
+    <textarea id="additional-info" placeholder=""></textarea>
+  </div>
+
+  <div class="field">
+    <button type="button" id="submit-btn">Submit</button>
+  </div>
+
+</div>
+
+<script src="/js/contact_us_form.js"></script>
+
+
+  <script src="/js/mobile.js"></script>
+</body>
+
+</html>

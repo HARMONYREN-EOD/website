@@ -1,6 +1,15 @@
-@font-face {
+/*@font-face {
   font-family: 'Noto Serif JP';
   src: url('/fonts/ttf/NotoSerifJP-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto;
+}*/
+
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('/fonts/woff2/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -11,8 +20,10 @@
   --bgc: #F0F0F0FF;
   --fgc: #0F0F0FFF;
 
-  --fgc-soft: #2E2E2E;
-  --bgc-soft: #E2E2E2;
+  --fgc-soft: #2E2E2EFF;
+  --bgc-soft: #E2E2E2FF;
+
+  --red: #C0392B;
 
   --max-width-tablet: 768px;
   --max-width-phone: 480px;
